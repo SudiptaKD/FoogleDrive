@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import PrivateRoute from "./authentication/PrivateRoute"
 import ForgotPassword from "./authentication/ForgotPassword";
 import UpdateProfile from "./authentication/UpdateProfile";
-import Dashboard from "../foogle-drive/Dashboard";
+import Dashboard from "./foogle-drive/Dashboard";
 
 function App() {
   return  (
