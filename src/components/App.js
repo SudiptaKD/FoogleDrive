@@ -1,33 +1,32 @@
-import SignUp from "./SignUp";
-import Dashboard from "./Dashboard";
-import LogIn from "./LogIn"
-import { Container } from "react-bootstrap";
+import SignUp from "./authentication/SignUp";
+import Profile from "./authentication/Profile";
+import LogIn from "./authentication/LogIn"
 import { AuthProvider } from "../context/AuthContext";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import PrivateRoute from "./PrivateRoute"
-import ForgotPassword from "./ForgotPassword";
-import UpdateProfile from "./UpdateProfile";
-
+import PrivateRoute from "./authentication/PrivateRoute"
+import ForgotPassword from "./authentication/ForgotPassword";
+import UpdateProfile from "./authentication/UpdateProfile";
+import Dashboard from "../foogle-drive/Dashboard";
 
 function App() {
   return  (
-    <Container className="d-flex align-items-center justify-content-center " 
-    style={{ minHeight: "100vh"}}
-    >
-      <div className="w-100" style={{maxWidth:"400px"}}>
         <Router>
           <AuthProvider>
             <Switch>
-              <PrivateRoute exact path="/" component={Dashboard} />
+              {/* Foogle Drive */}
+              <PrivateRoute exact path = "/" component={Dashboard} />
+
+              {/* Profile */}
+              <PrivateRoute path="/user" component={Profile} />
               <PrivateRoute  path="/update-profile" component={UpdateProfile} />
+
+              {/* Authentication */}
               <Route path="/signup" component ={SignUp} />
               <Route path="/login" component ={LogIn} />
               <Route path="/forgot-password" component ={ForgotPassword} />
             </Switch>
           </AuthProvider>
         </Router>
-      </div>
-    </Container>
   )
 }
 

@@ -1,7 +1,8 @@
 import React , {useRef, useState} from 'react'
 import { Button, Form, Card, Alert } from 'react-bootstrap'
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import { Link} from 'react-router-dom';
+import CenteredContainer from './CenteredContainer';
 
 const ForgotPassword = () => {
 
@@ -27,7 +28,7 @@ const ForgotPassword = () => {
     }
 
     return (
-        <>
+        <CenteredContainer>
             <Card>
                 <Card.Body>
                     <h2 className =" text-center mb-4">Password Reset</h2>
@@ -49,7 +50,7 @@ const ForgotPassword = () => {
             <div className = "w-100 text-center mt-2">
                 Need an Account?  <Link to="/signup">Sign Up</Link> 
             </div>  
-        </>
+        </CenteredContainer>
     )
 }
 
