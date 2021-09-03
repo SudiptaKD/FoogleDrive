@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function NavbarComponent() {
     return (
-        <Navbar bg = "secondary" expand = "sm" >
+        <Navbar bg = "secondary" variant="dark" expand = "sm" >
             <Container>
             <Navbar.Brand as={Link} to="/" >
                 Foogle Drive
