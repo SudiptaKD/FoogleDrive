@@ -1,9 +1,9 @@
 import React from "react"
-import Signup from "./authentication/Signup"
+import SignUp from "./authentication/SignUp"
 import { AuthProvider } from "../contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Profile from "./authentication/Profile"
-import Login from "./authentication/Login"
+import LogIn from "./authentication/LogIn"
 import PrivateRoute from "./authentication/PrivateRoute"
 import ForgotPassword from "./authentication/ForgotPassword"
 import UpdateProfile from "./authentication/UpdateProfile"
@@ -23,8 +23,8 @@ function App() {
           <PrivateRoute path="/update-profile" component={UpdateProfile} />
 
           {/* Auth */}
-          <Route path="/signup" component={Signup} />
-          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/login" component={LogIn} />
           <Route path="/forgot-password" component={ForgotPassword} />
         </Switch>
       </AuthProvider>
