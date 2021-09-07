@@ -15,6 +15,7 @@ function App() {
             <Switch>
               {/* Foogle Drive */}
               <PrivateRoute exact path = "/" component={Dashboard} />
+              <PrivateRoute exact path  = "/folder/:folderId" component={Dashboard} />
 
               {/* Profile */}
               <PrivateRoute path="/user" component={Profile} />

@@ -15,6 +15,9 @@ const fireStore = app.firestore() // Firebase firestore
 export const database = {
     folders : fireStore.collection("folders"), // Getting only folders
     files : fireStore.collection("files"), // Getting only files
+    formatDoc : doc => {
+        return { id:doc.id, ...doc.data()}
+    },
     getCurrentTimestamp : firebase.firestore.FieldValue.serverTimestamp // Getting when folder created
 }
 
