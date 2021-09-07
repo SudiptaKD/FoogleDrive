@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/FoogleDrive/static/js/main.d0b930a7.chunk.js",
+    "main.js.map": "/FoogleDrive/static/js/main.d0b930a7.chunk.js.map",
+    "runtime-main.js": "/FoogleDrive/static/js/runtime-main.bc73db57.js",
+    "runtime-main.js.map": "/FoogleDrive/static/js/runtime-main.bc73db57.js.map",
+    "static/css/2.818011ed.chunk.css": "/FoogleDrive/static/css/2.818011ed.chunk.css",
+    "static/js/2.e867bfea.chunk.js": "/FoogleDrive/static/js/2.e867bfea.chunk.js",
+    "static/js/2.e867bfea.chunk.js.map": "/FoogleDrive/static/js/2.e867bfea.chunk.js.map",
+    "index.html": "/FoogleDrive/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/FoogleDrive/static/css/2.818011ed.chunk.css.map",
+    "static/js/2.e867bfea.chunk.js.LICENSE.txt": "/FoogleDrive/static/js/2.e867bfea.chunk.js.LICENSE.txt",
+    "static/media/google drive.svg.bba8aadf.png": "/FoogleDrive/static/media/google drive.svg.bba8aadf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc73db57.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.e867bfea.chunk.js",
+    "static/js/main.d0b930a7.chunk.js"
+  ]
+}
